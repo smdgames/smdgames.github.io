@@ -95,7 +95,7 @@ h1.title {
     font-weight: bold;
     color: rgba($text-color, .9);
     z-index: 100;
-    @include animation(move-up 600ms ease-in);
+    @include animation(move-up 10ms ease-in);
     @include animation-fill-mode(both);
   }
 }
@@ -213,7 +213,7 @@ hr {
         margin-left: 10px;
       }
 
-      @include animation(fade-in 800ms ease $transition-speed * 12);
+      @include animation(fade-in 10ms ease $transition-speed * 12);
       @include animation-fill-mode(both);
 
       &.game-won {
@@ -409,7 +409,7 @@ hr {
 
 .tile-merged {
   z-index: 20;
-  @include animation(pop 200ms ease $transition-speed);
+  @include animation(pop 10ms ease $transition-speed);
   @include animation-fill-mode(both);
 }
 
@@ -524,7 +524,7 @@ hr {
     top: -30px;
     opacity: 0;
     pointer-events: none;
-    @include transition(400ms ease);
+    @include transition(10ms ease);
     @include transition-property(top, opacity);
 
     &:after {
